@@ -1,31 +1,104 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="bn">
 <head>
-<title>
-Bangladesh
-</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বাংলাদেশ টেস্ট ওয়েবসাইট</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-Bangladesh has multiple divisions:
-1.<u>Rajshahi</u><br>
-2.<b>Dhaka</b><br>
-3.<i> Chittagong</i><br>
-4. Barishal<br>
-5. Sylhet<br>
-6.rangpur<br>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🇧🇩 বাংলাদেশ</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">হোম</a></li>
+                    <li><a href="#about">সম্পর্কে</a></li>
+                    <li><a href="#divisions">বিভাগ</a></li>
+                    <li><a href="#contact">যোগাযোগ</a></li>
+                </ul>
+            </nav>
+            <button class="menu-btn" id="menuBtn">☰</button>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>বাংলাদেশে স্বাগতম</h2>
+            <p>প্রকৃতির সৌন্দর্য, ইতিহাস এবং সংস্কৃতির এক অনন্য দেশ</p>
+            <button class="cta-btn" id="welcomeBtn">স্বাগতম বার্তা দেখুন</button>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>আমাদের সম্পর্কে</h2>
+            <p>বাংলাদেশ দক্ষিণ এশিয়ার একটি সুন্দর দেশ। এর রাজধানী ঢাকা। এদেশের প্রাকৃতিক সৌন্দর্য, নদী, পাহাড় এবং সমুদ্র সৈকত পর্যটকদের মন কাড়ে।</p>
+            
+            <div class="info-cards">
+                <div class="card">
+                    <h3>জনসংখ্যা</h3>
+                    <p>প্রায় ১৭ কোটি</p>
+                </div>
+                <div class="card">
+                    <h3>আয়তন</h3>
+                    <p>১,৪৭,৫৭০ বর্গ কিমি</p>
+                </div>
+                <div class="card">
+                    <h3>রাজধানী</h3>
+                    <p>ঢাকা</p>
+                </div>
+                <div class="card">
+                    <h3>ভাষা</h3>
+                    <p>বাংলা</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Divisions Section -->
+    <section class="divisions" id="divisions">
+        <div class="container">
+            <h2>বিভাগসমূহ</h2>
+            <div class="division-grid">
+                <div class="division-card">ঢাকা</div>
+                <div class="division-card">চট্টগ্রাম</div>
+                <div class="division-card">রাজশাহী</div>
+                <div class="division-card">খুলনা</div>
+                <div class="division-card">বরিশাল</div>
+                <div class="division-card">সিলেট</div>
+                <div class="division-card">রংপুর</div>
+                <div class="division-card">ময়মনসিংহ</div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>যোগাযোগ</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="আপনার নাম" required>
+                <input type="email" id="email" placeholder="আপনার ইমেইল" required>
+                <textarea id="message" rows="5" placeholder="আপনার বার্তা" required></textarea>
+                <button type="submit">পাঠান</button>
+            </form>
+            <p id="formMsg"></p>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© ২০২৪ বাংলাদেশ টেস্ট ওয়েবসাইট। সর্বস্বত্ব সংরক্ষিত।</p>
+        </div>
+    </footer>
 
-
-
-
-
-
-
-
-
+    <script src="script.js"></script>
+</body>
 </html>
